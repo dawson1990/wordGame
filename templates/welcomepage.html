@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block body %}
+	<br/>
+	<h3>Aim of The Game:</h3><br/>
+		<form action='\thewordgame' method='POST'>
+
+	<p> A source word will be presented to you.  
+		You need to create 7 words from the source word.
+		The game will begin to time you when you click 'begin' below
+		If successful you will be asked for your name to be entered into leaderboard
+	</p><br/>
+	<h3>RULES:</h3><br/>
+	<p>1. Cannot use source word as an answer <br/>
+	2. You must provide 7 answers<br/>
+	3. Answers cannot be be less than 3 letters long<br/>
+	4. Can have no duplicates<br/>
+	5. Can only use each letter in source word once.<br/>
+	</p>
+	<input type="submit" value="Begin!"/>
+	</form>
+{% endblock %}

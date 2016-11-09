@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block body %}
+	<p>
+		Your time: {{time}} seconds
+	</p>
+	<form action='\scoreboard' method='POST'>
+		<label> Enter Your Name:</label><br/>
+		<input type="text" name="name"/></br>
+		<input type="submit" value="Submit"/>
+{% endblock %}
